@@ -1,0 +1,113 @@
+*{
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0F0F;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+}
+
+.container-input span{
+    color: white;
+    font-size: 22px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    background: #dfdfdf;
+    height: 18px;
+    outline: none;
+    margin-top: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+.geradordesenha{
+    width: 600px;
+    height: 82px;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #faa74a;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #e7ecf5;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.password-title{
+    text-align: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border: 1px solid #313131;
+    transition: transform 0.5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltip{
+    color: white;
+    position: relative;
+    top: 15px;
+    padding: 6px 8px;
+    background:rgb(39, 39, 39);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
